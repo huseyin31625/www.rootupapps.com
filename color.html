@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="color.js" defer></script>
+<link rel="stylesheet" href="https://api.rootupapps.com/main/style.css">
+<meta name="application-name" content="Rootupapps">
+<title>Coloring - Rootupapps</title>
+<style>
+div.color-item {
+  width: 9px;
+  height: 9px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+}
+div#colors {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  flex-direction: column;
+  display: inline-flex;
+}
+div#color-column {
+  display: inline-block;
+}
+* {
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div id="colors" style="width: 100px; height: 100px;"><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div><div id="color-column"><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div><div class="color-item"></div></div></div></br>
+<input type="range" id="r" max="255" min="0" value="0"><span id="r-i">0</span></br>
+<input type="range" id="g" max="255" min="0" value="0"><span id="g-i">0</span></br>
+<input type="range" id="b" max="255" min="0" value="0"><span id="b-i">0</span></br>
+</body>
+</html>
