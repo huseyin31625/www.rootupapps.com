@@ -1,12 +1,12 @@
-function _2022Popup() {
+function _16GBPopup() {
   var element = document.createElement("div");
   element.className = "modal-container";
   var element2 = document.createElement("div");
   element2.className = "modal-body";
   var img = document.createElement("img");
-  img.src = "https://static.rootupapps.com/2022.png";
+  img.src = "https://static.rootupapps.com/newram.jpg";
   var info = document.createElement("div");
-  info.innerHTML = "Happy New Year 2022!";
+  info.innerHTML = "My new 16 GB RAM!";
   var ok = document.createElement("button");
   ok.innerHTML = "OK";
   ok.onclick = function() {element.remove();};
@@ -16,4 +16,4 @@ function _2022Popup() {
   element.appendChild(element2);
   document.body.appendChild(element);
 }
-setTimeout(function() {_2022Popup();}, 1000);
+setTimeout(function() {_16GBPopup();}, 1000);
