@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://api.rootupapps.com/main/style.css">
+    <style>
+      infoit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <script>
+      function randomNum(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min; // You can remove the Math.floor if you don't want it to be an integer
+}
+      window.onload = () => {
+        var rand = randomNum(0, 2);
+        if (rand == 0) {
+          var elementTitle = document.createElement("infoit");
+          elementTitle.innerHTML = "Go to C# Programmer >>";
+          document.body.appendChild(elementTitle);
+          var click = document.createElement("a");
+          click.style = "position: fixed; top: 0; left: 0; width: 100%; height: 100%;";
+          click.href = "https://csharp.programmer.rootupapps.com/";
+          document.body.appendChild(click);
+        }
+        else if (rand == 1) {
+          var elementTitle = document.createElement("infoit");
+          elementTitle.innerHTML = "Go to Blackwidow999 >>";
+          document.body.appendChild(elementTitle);
+          var click = document.createElement("a");
+          click.style = "position: fixed; top: 0; left: 0; width: 100%; height: 100%;";
+          click.href = "https://blackwidow999.pw.rootupapps.com/";
+          document.body.appendChild(click);
+        }
+        else if (rand == 2) {
+          var elementTitle = document.createElement("infoit");
+          elementTitle.innerHTML = "Go to Rootupapps >>";
+          document.body.appendChild(elementTitle);
+          var click = document.createElement("a");
+          click.style = "position: fixed; top: 0; left: 0; width: 100%; height: 100%;";
+          click.href = "https://www.rootupapps.com/";
+          document.body.appendChild(click);
+        }
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
