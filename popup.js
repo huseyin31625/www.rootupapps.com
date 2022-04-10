@@ -6,7 +6,7 @@ function _16GBPopup() {
   var img = document.createElement("img");
   img.src = "https://static.rootupapps.com/newram.jpg";
   var info = document.createElement("div");
-  info.innerHTML = "My new 16 GB RAM!";
+  info.innerHTML = "My new 16 GB RAM! (i made typo: It'll be 'We' instead of 'We'll'.)";
   var ok = document.createElement("button");
   ok.innerHTML = "OK";
   ok.onclick = function() {element.remove();};
