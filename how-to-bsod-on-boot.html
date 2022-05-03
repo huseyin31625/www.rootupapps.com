@@ -5,22 +5,27 @@
   <title>How to force BSOD on Boot - Rootupapps</title>
 </head>
 <body>
-  <h2>How to force BSOD on Boot</h2>
-  <p>Firstly, you need to write these commands:</p>
-  <pre>
-  dism /mount-image /imagefile:&lt;YOUR install.wim FILE&gt; /mountdir:&lt;YOUR MOUNT DIRECTORY&gt; /index:&lt;1|2|3|4&gt;
-  Dism /Add-Driver /Image:&lt;YOUR MOUNT DIRECTORY&gt; /Driver:&lt;INF FILE OF YOUR BSOD ON BOOT DRIVER&gt; /forceunsigned
-  dism /unmount-image /mountdir:&lt;YOUR MOUNT DIRECTORY&gt; /commit
-  </pre>
-  <p>Open UltraISO.</p>
-  <p>Open your Windows installation ISO file.</p>
-  <p>Delete install.esd from ISO contents.</p>
-  <p>Place the install.wim file.</p>
-  <p>Save ISO file.</p>
-  <p>Open VMWare Workstation.</p>
-  <p>Create a virtual machine with your ISO.</p>
-  <p>And install the Windows.</p>
-  <p>The result:</p>
-  <img src="https://static.rootupapps.com/20221504-01.png">
+  <header>
+    <div class="header-container"><a href="https://www.rootupapps.com"><div class="header_logo"></div></div><a href="color.html">Coloring</a><a href="https://16gb-ram.rootupapps.com">16 GB RAM</a></div>
+  </header>
+  <div class="gui-container">
+    <h2>How to force BSOD on Boot</h2>
+    <p>Firstly, you need to write these commands:</p>
+    <pre>
+      dism /mount-image /imagefile:&lt;YOUR install.wim FILE&gt; /mountdir:&lt;YOUR MOUNT DIRECTORY&gt; /index:&lt;1|2|3|4&gt;
+      Dism /Add-Driver /Image:&lt;YOUR MOUNT DIRECTORY&gt; /Driver:&lt;INF FILE OF YOUR BSOD ON BOOT DRIVER&gt; /forceunsigned
+      dism /unmount-image /mountdir:&lt;YOUR MOUNT DIRECTORY&gt; /commit
+    </pre>
+    <p>Open UltraISO.</p>
+    <p>Open your Windows installation ISO file.</p>
+    <p>Delete install.esd from ISO contents.</p>
+    <p>Place the install.wim file.</p>
+    <p>Save ISO file.</p>
+    <p>Open VMWare Workstation.</p>
+    <p>Create a virtual machine with your ISO.</p>
+    <p>And install the Windows.</p>
+    <p>The result:</p>
+    <img src="https://static.rootupapps.com/20221504-01.png">
+  </div>
 </body>
 </html>
