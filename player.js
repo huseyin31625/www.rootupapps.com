@@ -46,6 +46,7 @@ document.getElementById("controller").addEventListener("mouseleave", function() 
 });
 document.getElementById("speed").addEventListener("input", function() {
   document.getElementById("willplay").playbackRate = document.getElementById("speed").value;
+  document.getElementById("speedind").innerHTML = document.getElementById("speed").value;
 });
 timer = setInterval(function() {
   document.getElementById("played").innerHTML = display(document.getElementById("willplay").currentTime) + " / " + display(document.getElementById("willplay").duration);
