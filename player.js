@@ -7,6 +7,10 @@ if (id == "0") {
   document.getElementById("name").innerHTML = "Japanese Logos on crack!!!";
   document.getElementById("willplay").src = "https://video.static.rootupapps.com/2nH_nOiB17E.mp4";
 }
+const embed = urlParams.get('embed');
+if (embed == "0") {
+  document.getElementsByClassName("player-top-controls")[0].remove();
+}
 var playing = false;
 document.getElementById("playpause").addEventListener("click", function() {
   playing = !playing;
