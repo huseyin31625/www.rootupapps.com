@@ -33,3 +33,6 @@ body {
 html {
   color: white;
 }
+html {
+  overflow-hidden;
+}
