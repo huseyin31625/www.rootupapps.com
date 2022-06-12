@@ -37,7 +37,7 @@ html {
   overflow: hidden;
 }
 @media (max-width: 300px) {
-  #duration, #speed {
+  #duration, #speed-panel {
     display: none;
   }
 }
