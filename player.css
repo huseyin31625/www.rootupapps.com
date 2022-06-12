@@ -36,3 +36,8 @@ html {
 html {
   overflow: hidden;
 }
+@media (max-width: 300) {
+  #duration, #speed {
+    display: none;
+  }
+}
