@@ -53,7 +53,8 @@ document.getElementById("speed").addEventListener("input", function() {
   document.getElementById("speedind").innerHTML = document.getElementById("speed").value;
 });
 timer = setInterval(function() {
-  document.getElementById("played").innerHTML = display(document.getElementById("willplay").currentTime) + " / " + display(document.getElementById("willplay").duration);
+  document.getElementById("played").innerHTML = display(document.getElementById("willplay").currentTime);
+  document.getElementById("duration").innerHTML = " / " + display(document.getElementById("willplay").duration);
 }, 1);
 function display (seconds) {
   const format = val => `0${Math.floor(val)}`.slice(-2)
