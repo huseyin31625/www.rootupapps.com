@@ -23,19 +23,31 @@ function getCookie(name) {
 function set() {
 setCookie("user_email",document.getElementById("gfgf").value,100); //set "user_email" cookie, expires in 30 days
 }
+function set2() {
+setCookie("id",document.getElementById("videoId").value,100); //set "user_email" cookie, expires in 30 days
+get2();
+}
 function get() {
 var userEmail=getCookie("user_email");//"bobthegreat@gmail.com"
 document.querySelector("p").innerHTML = userEmail;
+}
+function get2() {
+var id=getCookie("videoId");//"bobthegreat@gmail.com"
+document.getElementById("video").src = "https://www.youtube.com/embed/" + id;
 }
 </script>
 <link rel="stylesheet" href="https://api.rootupapps.com/main/style.css">
 <meta name="application-name" content="Rootupapps">
 <title>Keep by Cookies - Rootupapps</title>
 </head>
-<body>
+<body onload="get2()">
 <input type="text" id="gfgf">
 <button onclick="set()">Set</button>
 <button onclick="get()">Get</button>
 <p></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe></p>
+<p>This embed wants video. Please enter video ID.</p>
+<input type="text" id="id">
+<button onclick="set2()">Set</button>
 </body>
 </html>
